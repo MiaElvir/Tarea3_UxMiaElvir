@@ -77,9 +77,9 @@ body {
   background-color: #ededed;
   margin-bottom: 100px;
   background-image: url('https://i.pinimg.com/736x/4f/e0/06/4fe0069b038ddb1b7a72af8f82afb6ea.jpg');
-  background-size: cover; /* Cubre todo el contenedor sin deformarse */
-  background-position: center; /* Centra la imagen */
-  background-repeat: no-repeat; /* Evita que se repita */
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
 }
 
 .inStyle {

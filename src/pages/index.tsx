@@ -38,12 +38,12 @@ export default function Home() {
    useEffect(() => {
     const listaGuardada = localStorage.getItem("listaTareas");
     if (listaGuardada) {
-      setLista(JSON.parse(listaGuardada)); // Convierte el string a array
+      setLista(JSON.parse(listaGuardada)); //arr
     }
   }, []);
 
   useEffect(() => {
-    localStorage.setItem("listaTareas", JSON.stringify(lista));
+    localStorage.setItem("listaTareas", JSON.stringify(lista));//string
   }, [lista]);
 
   const toggleItem = (id: number) => {
@@ -53,11 +53,11 @@ export default function Home() {
     setLista(nuevaLista);
   };
 
-  const VaciarLista = () => {
+  const VaciarLista = () => {//Vaciamos para eliminar todo
     setLista([]);
   };
 
-  const borrarCompletadas = () => {
+  const borrarCompletadas = () => {//solo completadas
     const sincompletar = lista.filter((item) => !item.completada);
     setLista(sincompletar);
   };
